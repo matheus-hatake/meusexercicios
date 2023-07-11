@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'blazed';
+            src: url(fontes/Blazed.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embdded-opentype
+            - truetype-aat (Apple advanced Typography)
+            - svg
+        */    
+        }
+        @font-face {
+            font-family: polar;
+            src: url(fontes/Polar\ Snow.otf) format(opentype), url(fontes/Polar\ Snow.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'blazed', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            font-family: 'polar', sans-serif;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+   <h1>Em chamas</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptates temporibus culpa explicabo unde cupiditate nostrum eaque deleniti, debitis, dolore voluptatibus nisi aperiam dignissimos. Harum doloribus reiciendis suscipit. Laudantium, vel.</p> 
+   <h2>Congelado</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus modi quisquam fuga ipsa voluptates at ratione quos, placeat deserunt. Itaque molestias ullam eveniet quasi quisquam. Cupiditate similique necessitatibus atque.</p>
+</body>
+</html>

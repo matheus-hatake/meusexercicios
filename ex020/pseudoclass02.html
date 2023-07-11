@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            font-weight: bold; /*Negrito*/
+            text-decoration: none; /*Tira o sublinhado do link*/
+            color: red;
+        }
+
+        a:visited { /*Muda a cor quando link for visitado*/
+            color: darkred;
+        }
+
+        a:hover { /*Para fazer o sublinhado voltar a parecer*/
+            text-decoration: underline;
+        }
+
+        .especial:hover { /*quando passar o mouse em cima*/
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especial::before { /*para adc um elemento antes*/
+            content: '>>';
+            font-weight: lighter;
+        }
+
+        .especial::after { /*para adc um elemento depois*/
+            content: '<<';
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTMLS e CSS, acesse o
+        <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">GitHub do Guanabara
+        </a>
+    </p>
+    <p>Se quiser conhecer mais sobre os padrões, visite o site do
+        <a href="https://www.w3c.br" target="_blank" rel="external">Escritório do W3C no Brasil</a>        
+    </p>
+    <p>Para acompanha os cursos, acesse o
+        <a href="https:www.youtube.com/cursoemvideo/" target="_blank" rel="external" class="especial">canal do CursoemVideo</a>
+    </p>
+</body>
+</html>

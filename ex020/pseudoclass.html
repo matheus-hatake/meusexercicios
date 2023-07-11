@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(34, 34, 34);
+        }
+
+        h1 {
+            color: white;
+        }
+
+        div {
+            /*para alinhar um do lado do outro*/
+            display: inline-block;
+            font-size: 32px;
+            background-color: lightgray;
+            /*Largura, tipo, cor*/
+            border: 3px solid white; 
+            text-align: center;
+            height: 200px; /*Altura*/
+            width: 200px; /*Largura*/
+        }
+
+        div:hover {
+            color: white;
+            font-weight: bolder;
+            font-size: 32px;
+            
+        }
+
+        div#d1:hover {
+            background-color: blue;   
+        }
+
+        div#d2:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        div#d3:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecione uma cor</h1>
+    <div id="d1">01-azul</div>
+    <div id="d2">02-amarelo</div>
+    <div id="d3">03-vermelho</div>
+</body>
+</html>
