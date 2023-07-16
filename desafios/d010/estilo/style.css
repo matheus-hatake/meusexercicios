@@ -145,6 +145,7 @@ main a:hover {
 
 main img {
     width: 100%;
+    padding-top: 30px 15px;
 }
 
 main img.pequeno { 
