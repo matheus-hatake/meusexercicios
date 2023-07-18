@@ -5,19 +5,18 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font03);
 }
 
 :root {
     --font01: 'Passion One', cursive;
     --font02: 'Sriracha', cursive;
     --font03: Arial, Helvetica, sans-serif;
-}
-
-body {
-    min-height: 100vh;
-    background-color: darkgray;
-    font-family: var(--font03);
 }
 
 header {
@@ -29,19 +28,21 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
-    font-family: var(--font01);
-    font-size: 10vw;
-}
-
-h1 {
-    font-family: var(--font01);
-    font-weight: bold;
+    /*as letras ficam maiusculas e as primeiras letras ficam maiores*/
 }
 
 header > p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
     padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -49,12 +50,6 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--font02);
-    font-size: 3.5vw;
-}
-
-section > p {
-    padding-bottom: 2em;
 }
 
 section.normal {
@@ -62,28 +57,14 @@ section.normal {
     color: black;
 }
 
-section.image {
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section#img01 {
-    background-image: url('imagens/background001.jpg');
-    background-position: right center;
-
-}
-
-section#img02 {
-    background-image: url('imagens/background002.jpg');
-}
-
-section.image > p {
-    background-color: rgba(0, 0, 0, 0.5);
+section.imagem {
+    background-color: rgb(51, 51, 51);
     color: white;
-    max-width: 41vw;
-    padding: 10px;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 400px;
 }
 
 footer {
@@ -91,14 +72,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
-
-a:hover {
-    text-decoration: underline;
 }
