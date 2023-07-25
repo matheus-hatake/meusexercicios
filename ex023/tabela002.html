@@ -12,18 +12,40 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            /* 1- Para fixar o cabeçalho */
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         th, td {
             border: 1px solid black;
             padding: 10px;
         }
+        /* 2- Para fixar o cabeçalho */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
 
         thead, tfoot {
             background-color: gray;
             color: white;
         }
-
+        /* 
+            (2n-1) ou (2n) 
+            (odd) = par ou (even) = impar 
+        */
+        tbody > tr:nth-child(2n) { 
+            background-color: lightgray;
+        }
+        
         td.num {
             text-align: right;
         }
@@ -39,6 +61,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -47,11 +70,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Popolação das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</0th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</0th>
+                <th style="width: 50px;">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
@@ -61,7 +85,7 @@
                 <td class="porcen">22,2%</td>
             </tr>
             <tr>
-                <td>Minas Gerai
+                <td>Minas Gerais
                 <td class="num">20.538.718
                 <td class="porcen">10,0%
             </tr>
@@ -152,6 +176,11 @@
             </tr>
             <tr>
                 <td>Distrito Federal</td>
+                <td class="num">2.817.068</td>
+                <td class="porcen">1,4%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
                 <td class="num">2.756.700</td>
                 <td class="porcen">1,4%</td>
             </tr>
@@ -188,8 +217,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>203.062.512</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
     </table>
