@@ -22,7 +22,7 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.793);
-    width: 90vw;
+    width: 400px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -46,5 +46,3 @@ img#tablet {display: none;}
 img#print {display: none;}
 img#pc {display: none;}
 img#tv {display: none;}
-/* Se for para todos desse jeito tbm funciona!
-   img#phone, #tablet, #print, #pc, #tv {display: none;} */
